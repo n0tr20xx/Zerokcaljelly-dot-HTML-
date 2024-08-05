@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Design a web icon!-->
+        <title>0 kcal jelly homepage!</title>
+        <link rel="icon" type="image/jpg" href="images/"> <!--image name-->
+        <style>
+            h1{
+                padding:3%;
+                border-style: outset;
+                border-width: 5px;
+                border-color: blueviolet;
+                border-radius: 0ch;
+                border-spacing: 4cm;
+                text-shadow: 3px 3px 5px;  
+                color: rgb(232, 6, 252);
+                text-align: center;
+                animation-name: rainbow-border;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+
+
+            }
+            ::selection{
+                color:rgb(38, 255, 0);
+                background-color: rgb(0, 36, 0);
+            }
+            h2{
+                color:rgb(0, 255, 255);
+            }
+            body {
+                color: white ;
+                background-color: rgb(0, 0, 0);
+                
+            }
+            #r {font-family: 'Courier New', Courier, monospace; color:rgb(166, 255, 1)} 
+            #borderedbody {border-style: outset;
+                border-width: 5px;
+                border-color: rgb(134, 5, 255);
+                border-radius: 2ch;
+                border-spacing: 4cm;
+                text-shadow: 3px 3px 5px;  
+                color: rgb(247, 161, 255);
+                background-color: rgb(114, 4, 85);            
+            }
+            button:hover {
+                font-size-adjust: 1.2;
+            }
+            a:link{
+                color:rgb(14, 190, 254);
+            }
+            a:hover{
+                color:aqua;
+                font-size: 1.2em;
+            }
+            button:hover{
+                background-color: aquamarine;
+            }
+            li:hover{
+                background-color: rgb(1, 22, 77);
+                color:aquamarine;
+            }
+            button{
+                color:rgb(21, 240, 240);
+                background-color: crimson;
+                font-family: monospace;
+                font-variant: small-caps;
+                font-size:30px
+            }
+            button:hover{
+                background-color: rgb(255, 0, 0);
+                font-size: 39px;
+                color:rgb(149, 255, 0);
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .navbar ul{
+                overflow: hidden;
+                background-color: rgb(58, 58, 208);
+
+            }
+            .navbar a{
+                text-align: center;
+                padding: 1px;
+                display:block;
+                text-decoration: dashed;
+                background-color: rgb(132, 0, 255);
+                color:rgb(0, 255, 191);
+            }
+
+            .navbar a:hover{
+                transform: scale(0.9);
+            }
+
+            .navbar li{
+                list-style-type: none;
+                color:rgb(128, 149, 255);
+                font-size: 35px;
+                text-decoration: none;
+                float: left;
+                text-align: center;
+                padding: 10px;
+            
+
+            }
+            
+            *{
+                box-sizing: border-box; <!--all elements selected with an asterisk as such-->
+
+            }
+            body{
+                margin:0; 
+                background-color: rgb(0, 0, 0);
+            }
+            aside{
+                width:10%;
+                float:left;
+            }
+            section{
+                width:60%;
+                float:left;
+                padding:2%;
+
+            }
+            article{
+                width: 20%; 
+                float:right;
+            }
+            footer{
+                display:block;
+                background-color: aquamarine;
+                padding: 20px;
+                clear: both; <!----> <!--this seems to sebd this to the bottom? idk--> <!---->
+
+            }
+            @media screen and (max-width:600px){ 
+                aside, section, article{
+                    width:100%
+                }
+            }
+            footer:hover{
+                color:chartreuse;
+                background-color: black;
+            }
+            .box{
+                width:150px;
+                height:150px;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 34%;
+                
+            }
+            .box:hover{
+                animation-name: slideleft;
+                animation-duration: 2s;
+                
+            }
+            @keyframes slideleft{
+                to{transform: rotateZ(360deg)}
+            }
+            #box1{
+                background-color: rgb(133, 3, 255);
+            }
+            @keyframes box1anim{
+                    from{transform: translateY(157px)}}
+            #box2{
+                background-color: rgb(0, 255, 251);
+            }
+          
+            @keyframes glow{
+                0%{text-shadow: 0px 0px 40px;}
+                50%{box-shadow: 10px 10px 50px rgb(0, 238, 255);}
+                50%{text-shadow: 0px 0px 59px;}
+                75%{text-shadow: 0px 0px 25px;}
+                80%{box-shadow: 10px 10px 54px rgb(255, 89, 0)}
+                100%{text-shadow: 0px 10px 97px;}
+            }
+            @keyframes textrbglow{
+                100%,0%{
+                    text-shadow: 0px 0px 25px rgb(255,0,0);
+                    color: rgb(255,0,127);
+                }
+                8%{
+                    text-shadow: 0px 0px 25px rgb(255,127,0);
+                    color: rgb(255,0,0);
+                }
+                16%{
+                    text-shadow: 0px 0px 25px rgb(255,255,0);
+                    color: rgb(255,127,0);
+                }
+                25%{
+                    text-shadow:0px 0px 25px rgb(127,255,0);
+                    color: rgb(255,255,0);
+                }
+                33%{
+                    text-shadow:0px 0px 25px rgb(0,255,0);
+
+                }
+                41%{
+                    text-shadow: 0px 0px 25px rgb(0,255,127);
+                    color: rgb(0,255,0);
+                }
+                50%{
+                    text-shadow: 0px 0px 25px rgb(0,255,255);
+                }
+                58%{
+                    text-shadow: 0px 0px 25px rgb(0,127,255);
+                }
+                66%{
+                    text-shadow:0px 0px 25px rgb(0,0,255);
+                }
+                75%{
+                    text-shadow:0px 0px 25px rgb(127,0,255);
+                }
+                83%{
+                    text-shadow:0px 0px 25px rgb(255,0,255);
+                    color: rgb(0,0,255);
+                }
+                91%{
+                    text-shadow:0px 0px 25px rgb(255,0,127);
+                }
+
+            }
+            @keyframes rainbow{
+                100%,0%{
+                    color: rgb(255,0,0);
+                }
+                8%{
+                    color: rgb(255,127,0);
+                }
+                16%{
+                    color: rgb(255,255,0);
+                }
+                25%{
+                    color: rgb(127,255,0);
+                }
+                33%{
+                    color: rgb(0,255,0);
+                }
+                41%{
+                    color: rgb(0,255,127);
+                }
+                50%{
+                    color: rgb(0,255,255);
+                }
+                58%{
+                    color: rgb(0,127,255);
+                }
+                66%{
+                    color: rgb(0,0,255);
+                }
+                75%{
+                    color: rgb(127,0,255);
+                }
+                83%{
+                    color: rgb(255,0,255);
+                }
+                91%{
+                    color: rgb(255,0,127);
+                }}
+            @keyframes rainbow-bg{
+                100%,0%{
+                background-color: rgb(255,0,0);
+                }
+                8%{
+                background-color: rgb(255,127,0);
+                }
+                16%{
+                background-color: rgb(255,255,0);
+                }
+                25%{
+                background-color: rgb(127,255,0);
+                }
+                33%{
+                background-color: rgb(0,255,0);
+                }
+                41%{
+                background-color: rgb(0,255,127);
+                }
+                50%{
+                background-color: rgb(0,255,255);
+                }
+                58%{
+                background-color: rgb(0,127,255);
+                }
+                66%{
+                background-color: rgb(0,0,255);
+                }
+                75%{
+                background-color: rgb(127,0,255);
+                }
+                83%{
+                background-color: rgb(255,0,255);
+                }
+                91%{
+                background-color: rgb(255,0,127);
+                }
+                }
+            @keyframes rainbow-border{
+                100%,0%{
+                border-color: rgb(255,0,0);
+                }
+                8%{
+                border-color: rgb(255,127,0);
+                }
+                16%{
+                border-color: rgb(255,255,0);
+                }
+                25%{
+                border-color: rgb(127,255,0);
+                }
+                33%{
+                border-color: rgb(0,255,0);
+                }
+                41%{
+                border-color: rgb(0,255,127);
+                }
+                50%{
+                border-color: rgb(0,255,255);
+                }
+                58%{
+                border-color: rgb(0,127,255);
+                }
+                66%{
+                border-color: rgb(0,0,255);
+                }
+                75%{
+                border-color: rgb(127,0,255);
+                }
+                83%{
+                border-color: rgb(255,0,255);
+                }
+                91%{
+                border-color: rgb(255,0,127);
+                }
+                }
+            #pkeys{
+                background:rgb(153, 0, 255); 
+                border-style: inset; 
+                border-width: 20px; 
+                border-color: rgb(118, 2, 250);
+            }
+
+        </style>
+    </head>
+    <body> 
+        <header>
+            <h1 style="margin-top: 10%; margin-bottom; animation-name: rainbow; animation-duration:3s;animation-iteration-count: infinite;
+            animation-play-state: running; font-size: 70px; padding: 0px;">Zerokcaljellies</h1>
+            <h3 style="animation-name: rainbow; animation-duration: 5s;animation-iteration-count: infinite; animation-play-state: running; border-style: double; padding: 2%">Welcome to my website, a part of <a href="http://neocities.org">Neocities</a></h3>
+            <link rel="stylesheet" type="text/css" > <!-- this is a note -->
+        </header>
+        
+        <!-- MY NAVIGATION BAR-->
+        <div id="navbar" style="overflow:scroll;">
+            <nav class="navbar" style="display:flex; width:fit-content; margin: auto; margin-left: 10% auto; margin-right:10% auto;">
+                <u1 style="display:flex; justify-content: space-between; width:100%; background-color: blueviolet; text-align: justify;" >
+                    <li id="pkeys"><a href="">esc</a></li>
+                    <li id="pkeys"><a href="">F1</a></li>
+                    <li id="pkeys"><a href="">F2</a></li>
+                    <li id="pkeys"> <a href="">F3</a></li>
+                    <li id="pkeys"> <a href="">F4</a></li>
+                    <li id="pkeys"> <a href="">F5</a></li>
+                    <li id="pkeys"> <a href="">F6</a></li>
+                    <li id="pkeys"> <a href="">delete</a></li>
+                </u1>
+            </nav>
+        </div>
+    </body>
+ 
+<body>
+<div>
+    <section style="width:100%; text-align: center; padding:50px">
+        <p> I designed this website to try my hand at HTML and CSS. Plus, I enjoy how Neocities websites look, and wanted to add my own personalised site to the community. I hope you enjoy this random piece of what's on offer :) <br> FYI I am super amateur when it comes to web design so um, don't expect too much. </p>
+    </section>
+<h2 style="text-align: center; animation-name: textrbglow; animation-duration: 10s; animation-play-state: running; animation-iteration-count: infinite;">Some of my interests include</h2>
+    <ul style="text-align: center; padding-left: 25%; padding-right: 25%;"> 
+        <style>
+            ul{color: rgb(10, 255, 10);
+            }
+        </style>
+      <li>running</li>
+      <li>nutrition and food reviews (Instagram: <a href="https://instagram.com/taste._.r0hit_hk">@taste._.r0hit_hk</a>)</li> <!-- a indicates hyperlinks-->
+      <li>photography</li>
+      <li>fitness</li>
+      <li>Social media (Instagram: <a href="https://instagram.com/n0tr20xx">@n0tr20xx</a>)</li>
+    </ul>
+        
+</div>
+
+<div>
+    <header>
+        <h1 style="color:rgb(234, 80, 106); animation-name: glow; animation-duration: 2s; animation-iteration-count: infinite;animation-play-state: running;">Heading 2</h1>
+    </header>
+
+    <main>
+        <aside>
+            <h2> this is aside!(h2)</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellendus explicabo libero ex quo ut. Sit quidem quasi beatae a maiores. Reiciendis tempora, quibusdam molestiae eius dolorem enim harum voluptatem.
+        </aside>
+        <section>
+            <h1> this is a section(h1)</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ullam dolorem esse maiores consequatur nihil! Neque, possimus esse qui reprehenderit rerum, laborum ducimus commodi asperiores, ipsum tempore voluptate quaerat iure!
+        </section>
+        <article>
+            <h3> this is an article!(h3) </h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab voluptate tempore cupiditate perferendis quam vel quod est placeat corrupti, explicabo similique atque, omnis et dolore accusantium, beatae provident harum.
+        </article>
+        <footer style="background-color: rgb(35, 5, 64);">
+            <h1>footer!</h1>
+            <img src="/neocities.png" alt="This is the Neocities logo">
+        </footer>
+
+        <div class="container" style="display:flex; justify-content: center; border:20px rgb(68, 220, 222) dotted; flex-wrap: wrap; align-content: flex-start; animation-name: rainbow-border; animation-duration: 5s; animation-iteration-count: infinite;">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2" style="background;">2</div>
+            <div class="box" style="background:rgb(0, 255, 170); border-style: inset; border-width: 34px; border-color: rgb(10, 198, 135); ">3</div>
+            <div class="box" style="background:rgb(255, 0, 238); border-style: inset; border-width: 34px; border-color: rgb(219, 10, 251); transform: scale(0.7); animation-play-state: running; animation-iteration-count: infinite;" >4</div>
+        </div>
+
+    </main>
+
+
+</div>
+
+
+
+
+</body>
+</html>
